@@ -26,6 +26,11 @@ ul {
 
 body {
    color: #151618;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 20px;
+   font-weight: 300;
+   line-height: 1.5;
+   /* font-family: 'Cormorant', serif; */
 }
 
 .header__inner {
@@ -44,6 +49,9 @@ body {
    display: flex;
    align-items: center;
    gap: 0 65px;
+   font-weight: 400;
+   font-size: 18px;
+   margin-left: 85px;
 }
 
 .user-actions {
@@ -54,4 +62,47 @@ body {
 
 .user-actions__item-search {
    margin-left: 80px;
+}
+
+.top {
+   background-image: url('./images/top_fone.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top center;
+}
+
+.top__inner {
+   min-height: 500px;
+   color: #fff;
+   font-family: 'Cormorant', serif;
+   font-weight: 400;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+}
+
+.top__title {
+   font-size: 60px;
+   margin-bottom: 20px;
+   max-width: 780px;
+   line-height: 1;
+   font-weight: 400;
+}
+
+.top__text {
+   font-size: 24px;
+   margin-bottom: 48px;
+   max-width: 560px;
+   line-height: normal;
+}
+
+.blockquote__text {
+   font-family: 'Cormorant', serif;
+   font-size: 40px;
+   font-style: italic;
+   font-weight: 300;
+   line-height: normal;
+   text-align: center;
+   max-width: 704px;
+   margin: 150px auto;
 }
