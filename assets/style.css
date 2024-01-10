@@ -272,6 +272,108 @@ body {
    width: 152px;
 }
 
+.mailing-list {
+   padding: 100px 0;
+   background-color: #F7F2EA;
+   background-image: url(./images/mailing-bg.png);
+   background-repeat: no-repeat;
+   background-position: bottom right;
+}
+
+.mailing-list__title {
+   text-align-last: left;
+   margin-bottom: 50px;
+}
+
+.mailing-list__inner {
+   display: flex;
+   gap: 60px 40px;
+}
+
+.mailing-list__text {
+   line-height: 1.5;
+   flex-basis: 580px;
+}
+
+.mailing-list__form {
+   display: flex;
+   flex-wrap: wrap;
+   flex-basis: 580px;
+}
+
+.mailing-list__email {
+   border: none;
+   border-bottom: 1px solid #B8B58B;
+   background-color: transparent;
+   padding: 3px 15px;
+   width: 438px;
+   margin-right: 25px;
+   line-height: 1.5;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 20px;
+   color: #151618;
+
+}
+
+.mailing-list__email::placeholder {
+   color: #B8B58B;
+   line-height: 1.5;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 20px;
+   font-weight: 300;
+}
+
+.mailing-list__btn {
+   font-family: 'Open Sans', sans-serif;
+   background-color: #fff;
+   border: 1px solid #151618;
+   padding: 12px 41px;
+   font-size: 20px;
+   font-weight: 300;
+   cursor: pointer;
+}
+
+.checkbox__text {
+   font-size: 13px;
+   margin-left: 20px;
+}
+
+.mailinh-list__label {
+   margin-top: 16px;
+}
+
+.checkbox {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   clip: rect(0, 0, 0, 0);
+   overflow: hidden;
+}
+
+.checkbox-style {
+   position: absolute;
+   width: 10px;
+   height: 10px;
+   border: 1px solid #151618;
+   margin-top: 5px;
+}
+
+/* //добавляем галочку в наш чекбокс */
+
+/* .checkbox:checked+.checkbox-style {
+   /* //сюда вставляем изображение галочки через background-image: ; */
+/* } */
+
+/* //либо мы сделаем чуть по-другому */
+.checkbox:checked+.checkbox-style::before {
+   content: '';
+   position: absolute;
+   width: 6px;
+   height: 6px;
+   background-color: #151618;
+   top: 1px;
+   left: 1px;
+}
 
 
 
@@ -281,11 +383,11 @@ body {
 
 
 
+/* ****************** */
 
+/* //  медиа запросы */
 
-
-
-
+/* // 1000px */
 
 @media(max-width:1000px) {
    .user-actions__item-search {
@@ -328,6 +430,8 @@ body {
       display: none;
    }
 }
+
+/* // 860px */
 
 @media(max-width:860px) {
    .menu__list {
@@ -403,6 +507,8 @@ body {
    }
 }
 
+/* // 768px */
+
 @media(max-width:768px) {
    .header__inner {
       padding-left: 64px;
@@ -427,6 +533,8 @@ body {
       gap: 30px 76px;
    }
 }
+
+/* // 680px */
 
 @media(max-width:680px) {
    .container {
@@ -459,6 +567,8 @@ body {
       flex-basis: 220px;
    }
 }
+
+/* // 480px */
 
 @media(max-width:480px) {
    .logo {
@@ -497,6 +607,8 @@ body {
       flex-basis: 220px;
    }
 }
+
+/* // 360px */
 
 @media(max-width:360px) {
    .logo {
