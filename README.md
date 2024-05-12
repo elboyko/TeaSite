@@ -1,6 +1,6 @@
 ### Здесь сверстана первая страница интернет магазина по продаже чая
 
-## Ссылка на GitHub Pages: https://elboyko.github.io/TeaSite/
+### Ссылка на GitHub Pages: https://elboyko.github.io/TeaSite/
 
 ---
 
@@ -18,4 +18,4 @@
 
 ---
 
-![](./assets/images/teaSite.png)
+![](./assets/images/TeaSite.png)
